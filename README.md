@@ -16,13 +16,54 @@ Product's for which this GST Calculator is valid with respective GST percentage
   - Furnitures (Table, Sofa, Chair) --> 5%
   - Electronics (Mobile, TV, Tablet) --> 18%
   - Cosmetics (Cream, Perfume, Lotion) --> 28%
-### What to change GST Slave ? 
-In folder `src` get into package `com.gst.calculator` open the Java Class file `GSTCharge.java` update the GST Percentage slabs and update value of 
+  
+# What to change GST Slave ? 
+
+In folder `src` get into package `com.gst.calculator` open the Java Class file `GST.java` update the GST Percentage slabs and update value of 
 ```
 private static final int foodGrainGSTPercent = 0;
 private static final int furnitureGSTPercent = 5;
 private static final int electronicsGSTPercent = 18;
 private static final int cosmeticsGSTPercent = 28;
+```
+# Want to add more products to application ? 
+
+we can add that too under four categories as in file `GST.java` : - 
+
+```
+static List<String> foodGrainProducts = new ArrayList<String>() {
+		{
+			add("Rice");
+			add("Wheat");
+			add("Dal");
+		}
+	};
+static List<String> furnitureProducts = new ArrayList<String>() {
+		{
+
+			add("Table");
+			add("Sofa");
+			add("Chair");
+		}
+	};
+
+static List<String> electronicProducts = new ArrayList<String>() {
+		{
+			add("Mobile");
+			add("TV");
+			add("Tablet");
+		}
+	};
+
+static List<String> cosmeticsProducts = new ArrayList<String>() {
+		{
+
+			add("Cream");
+			add("Perfume");
+			add("Lotion");
+		}
+	};
+
 ```
 ### Tech
 
